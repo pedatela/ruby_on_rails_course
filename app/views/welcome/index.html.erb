@@ -1,0 +1,15 @@
+<p>
+    <%= link_to 'Portugues', root_path(locale: 'pt-BR') %>
+</p>
+<p>
+   <%= link_to 'English', root_path(locale: 'en') %>
+</p>
+
+</p>
+<h1>Seja bem vindo</h1>
+<ul>
+    <p>A lingua usada nessa app é <%= l(Date.today) %></p>
+    <p>A lingua usada nessa app é <%= t('hello') %></p>
+    <li><%=link_to "Moedas", coins_path %></li>
+    <li><%=link_to "Tipos de Mineração", mining_types_path %></li>
+</ul>
